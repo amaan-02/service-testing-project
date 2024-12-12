@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: qa-amaan-staging
+  labels:
+    environmentId: env_b518c508-4097-4a17-9c94-0b67a4e8f518
+    projectId: project_54982cc0-91cb-4f44-941e-4e81c72ce76c
+    projectName: qa-amaan
+    environmentName: staging
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016

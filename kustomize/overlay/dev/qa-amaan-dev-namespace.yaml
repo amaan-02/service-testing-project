@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: qa-amaan-dev
+  labels:
+    environmentId: env_17f3b586-63aa-42f7-b8f6-631c211e62e0
+    projectId: project_54982cc0-91cb-4f44-941e-4e81c72ce76c
+    projectName: qa-amaan
+    environmentName: dev
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
