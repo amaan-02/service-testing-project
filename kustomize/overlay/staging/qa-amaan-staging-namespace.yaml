@@ -3,8 +3,8 @@ kind: Namespace
 metadata:
   name: qa-amaan-staging
   labels:
-    environmentId: env_b518c508-4097-4a17-9c94-0b67a4e8f518
-    projectId: project_54982cc0-91cb-4f44-941e-4e81c72ce76c
-    projectName: qa-amaan
+    environmentId: env_001183c1-aea5-490b-92b8-9e85f880e36d
+    projectId: project_881d4295-6fc2-4f3f-87ce-f2b6e64503bc
+    projectName: qa-amaan-project
     environmentName: staging
     organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
