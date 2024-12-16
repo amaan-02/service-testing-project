@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: qa-team-testing-v1-0-0
+    applicationId: app_7ae550e1-9b9d-4e40-9216-eac2d7ceb0d0
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    environmentId: env_28e0313c-7e56-4c3f-832c-99e620025894
+  name: qa-team-testing-v1-0-0
+spec:
+  selector:
+    app: qa-team-testing-v1-0-0
