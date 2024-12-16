@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qa-team-project-v1-0-0
+  labels:
+    app: qa-team-project-v1-0-0
+    applicationId: app_aac5aab0-9b12-4725-8966-9ebb381c0ae0
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    environmentId: env_73c32f56-d735-4561-a850-7e39497abbe9
+  annotations:
+    reloader.stakater.com/auto: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: qa-team-project-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: qa-team-project-v1-0-0
+        applicationId: app_aac5aab0-9b12-4725-8966-9ebb381c0ae0
+        version: v1.0.0
+        organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+        projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+        environmentId: env_73c32f56-d735-4561-a850-7e39497abbe9
