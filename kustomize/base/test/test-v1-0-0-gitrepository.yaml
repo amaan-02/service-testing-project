@@ -1,0 +1,15 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: test-v1-0-0
+  labels:
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    applicaitonId: app_a5057cf6-1846-4b64-812f-3e60ec7da7d1
+spec:
+  interval: 1m0s
+  url: https://github.com/ThussithaJ/qatesttj-skyu-gitops-802a4451
+  ref:
+    branch: main
+  secretRef:
+    name: test-v1-0-0-secret
