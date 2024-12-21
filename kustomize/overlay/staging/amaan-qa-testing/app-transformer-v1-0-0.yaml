@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: amaan-qa-testing-main
+      imagePullPolicy: Always
+      imageRegistry: docker.io/amaan-qa-testing
+      imagePullSecretName: imagepull-docker
+      credentialId: credential_c245ad9e-61ae-4101-b97a-27b44de16e18
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 86400
+  labels:
+    app: amaan-qa-testing
+    version: v1.0.0
+    applicationId: app_55defd86-be5c-4112-b81c-5f0b8501467e
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    environmentId: env_28e0313c-7e56-4c3f-832c-99e620025894
+    environmentName: staging
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: CronJob
+  name: amaan-qa-testing
+  cronTab: 0 0 1 * *
+  version: v1.0.0
+  namespace: common-project-testing-staging
