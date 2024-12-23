@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 02fb7835bd368c3b0e2dc1971779a4b052261769
+    - imageTag: 4d539772a8786ce0e7e29685dc475937c2b8f564
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -24,9 +24,9 @@ spec:
       imagePullSecretName: imagepull-docker
       credentialId: credential_5784dbe8-0a00-4fb0-adb9-e0f0b099fa19
       commitDetails:
-        commitHash: 02fb7835bd368c3b0e2dc1971779a4b052261769
+        commitHash: 4d539772a8786ce0e7e29685dc475937c2b8f564
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2024-12-23T12:21:15Z'
+        commitTime: '2024-12-23T12:22:10Z'
         commitMessage: Deploy AI-FEATURE-QA to dev
         commitUser: skyu-v2-dev[bot]
   minReplicas: 1
