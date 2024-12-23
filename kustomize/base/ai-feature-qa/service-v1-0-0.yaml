@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: ai-feature-qa-v1-0-0
+    applicationId: app_da4b216d-fbad-4336-a371-677e8c8891c7
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+  name: ai-feature-qa-v1-0-0
+spec:
+  selector:
+    app: ai-feature-qa-v1-0-0
