@@ -19,7 +19,9 @@ spec:
         namespace: common-project-testing-dev
       valuesFiles:
         - swagger_save
-  values: {}
+  values:
+    spec:
+      name: demo
   postRenderers:
     - kustomize:
         patches:
