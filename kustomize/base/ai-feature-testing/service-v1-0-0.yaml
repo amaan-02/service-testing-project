@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: ai-feature-testing-v1-0-0
+    applicationId: app_bea743eb-6a5a-46b6-beed-318216d51293
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+  name: ai-feature-testing-v1-0-0
+spec:
+  selector:
+    app: ai-feature-testing-v1-0-0

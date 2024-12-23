@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: ai-feature-testing-main
+      imagePullPolicy: Always
+      imageRegistry: docker.io/ai-feature-testing
+      imagePullSecretName: imagepull-docker
+      credentialId: credential_9555b6e3-b3b7-48b3-acd7-71e595806369
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: ai-feature-testing
+    version: v1.0.0
+    applicationId: app_bea743eb-6a5a-46b6-beed-318216d51293
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    environmentId: env_28e0313c-7e56-4c3f-832c-99e620025894
+    environmentName: staging
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: ai-feature-testing
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: common-project-testing-staging
