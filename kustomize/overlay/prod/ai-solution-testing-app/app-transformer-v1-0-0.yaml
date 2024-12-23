@@ -22,7 +22,7 @@ spec:
       imagePullPolicy: Always
       imageRegistry: docker.io/ai-solution-testing-app
       imagePullSecretName: imagepull-docker
-      credentialId: credential_c245ad9e-61ae-4101-b97a-27b44de16e18
+      credentialId: credential_9555b6e3-b3b7-48b3-acd7-71e595806369
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
@@ -32,7 +32,7 @@ spec:
   labels:
     app: ai-solution-testing-app
     version: v1.0.0
-    applicationId: app_b874c9f2-b9e5-4851-8cf1-ca1d6b60d118
+    applicationId: app_d5c9f791-13e6-4fc8-baf3-ab7eb12d686b
     projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
     organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
     environmentId: env_73c32f56-d735-4561-a850-7e39497abbe9
