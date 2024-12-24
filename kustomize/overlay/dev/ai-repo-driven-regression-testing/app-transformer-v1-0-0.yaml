@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
+    - imageTag: 6e8950906f1acbc7cfc836db627300b97e1e9205
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -23,6 +23,12 @@ spec:
       imageRegistry: docker.io/amaan02/ai-repo-driven-regression-testing
       imagePullSecretName: imagepull-docker
       credentialId: credential_5784dbe8-0a00-4fb0-adb9-e0f0b099fa19
+      commitDetails:
+        commitHash: 6e8950906f1acbc7cfc836db627300b97e1e9205
+        commitAvatar: https://github.com/skyu-v2-dev[bot].png
+        commitTime: '2024-12-24T06:56:34Z'
+        commitMessage: Create New Swagger Spec
+        commitUser: skyu-v2-dev[bot]
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
