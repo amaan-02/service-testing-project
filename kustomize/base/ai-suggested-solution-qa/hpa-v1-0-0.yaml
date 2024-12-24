@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  annotations: {}
+  name: ai-suggested-solution-qa-v1-0-0
+  labels:
+    app: ai-suggested-solution-qa-v1-0-0
+    applicationId: app_e132a99f-7ff8-4e9d-9bc9-ed0a9b601a18
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: ai-suggested-solution-qa-v1-0-0
