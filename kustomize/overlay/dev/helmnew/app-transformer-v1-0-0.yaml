@@ -1,0 +1,24 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers: []
+  name: helmnew
+  type: HelmChart
+  horizontalAutoScalingRules: []
+  volumes: []
+  version: v1.0.0
+  labels:
+    app: helmnew
+    version: v1.0.0
+    applicationId: app_5fec5a50-284e-46d6-8a96-8694273ea6f4
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    environmentId: env_d3c9b73e-8f9c-46aa-a8ef-fd6addc71a6b
+    environmentName: dev
+  namespace: common-project-testing-dev
