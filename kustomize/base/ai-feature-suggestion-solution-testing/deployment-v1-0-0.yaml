@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-feature-suggestion-solution-testing-v1-0-0
+  labels:
+    app: ai-feature-suggestion-solution-testing-v1-0-0
+    applicationId: app_c01789ad-b47d-48af-8d5a-3409559e4d43
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+  annotations:
+    reloader.stakater.com/auto: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: ai-feature-suggestion-solution-testing-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: ai-feature-suggestion-solution-testing-v1-0-0
+        applicationId: app_c01789ad-b47d-48af-8d5a-3409559e4d43
+        version: v1.0.0
+        organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+        projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: ai-feature-suggestion-solution-testing-v1-0-0
+    applicationId: app_c01789ad-b47d-48af-8d5a-3409559e4d43
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    environmentId: env_fd76a64c-3758-4ccc-bd5c-2fb67cc234d0
+  name: ai-feature-suggestion-solution-testing-v1-0-0
+spec:
+  selector:
+    app: ai-feature-suggestion-solution-testing-v1-0-0
