@@ -4,7 +4,7 @@ metadata:
   annotations: {}
   labels:
     app: ai-intern-qa-v1-0-0
-    applicationId: app_c1de206f-9988-4ef6-b7bd-a5848de06826
+    applicationId: app_7875adec-957c-4737-ae15-c3204081c297
     version: v1.0.0
     organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
     projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
