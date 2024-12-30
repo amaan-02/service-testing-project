@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: ai-intern-qa-main
+      imagePullPolicy: Always
+      imageRegistry: docker.io/amaan02/ai-intern-qa
+      imagePullSecretName: imagepull-docker
+      credentialId: credential_5784dbe8-0a00-4fb0-adb9-e0f0b099fa19
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: ai-intern-qa
+    version: v1.0.0
+    applicationId: app_c1de206f-9988-4ef6-b7bd-a5848de06826
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    environmentId: env_fd76a64c-3758-4ccc-bd5c-2fb67cc234d0
+    environmentName: test-env
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: AI-INTERN-QA
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: test23
