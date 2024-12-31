@@ -1,0 +1,15 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: test2-v1-0-0
+  labels:
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    applicaitonId: app_7108581e-4f42-4acb-8010-ffd9d1595c8b
+spec:
+  interval: 1m0s
+  url: https://github.com/JayaniJ00/test-service-project
+  ref:
+    branch: master
+  secretRef:
+    name: test2-v1-0-0-secret
