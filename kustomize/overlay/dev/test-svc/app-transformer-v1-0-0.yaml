@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: test-svc-main
+      imagePullPolicy: Always
+      imageRegistry: docker.io/thameeragg/test-svc
+      imagePullSecretName: imagepull-docker
+      credentialId: credential_e32e18ac-964b-4c8e-b5e8-d16d1ac32477
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: test-svc
+    version: v1.0.0
+    applicationId: app_5fd888c6-9167-4b37-b99e-aea903785a6e
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    environmentId: env_d3c9b73e-8f9c-46aa-a8ef-fd6addc71a6b
+    environmentName: dev
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: test-svc
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: common-project-testing-dev

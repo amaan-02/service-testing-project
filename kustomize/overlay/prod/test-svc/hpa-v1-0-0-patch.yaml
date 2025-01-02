@@ -1,0 +1,17 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  annotations: {}
+  name: test-svc-v1-0-0
+  labels:
+    app: test-svc-v1-0-0
+    applicationId: app_5fd888c6-9167-4b37-b99e-aea903785a6e
+    version: v1.0.0
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    environmentId: env_73c32f56-d735-4561-a850-7e39497abbe9
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: test-svc-v1-0-0
