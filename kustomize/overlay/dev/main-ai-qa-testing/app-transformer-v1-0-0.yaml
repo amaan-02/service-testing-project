@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
+    - imageTag: 8fd94ef0e5eecc59d71cc264580840c72f7551f5
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -20,9 +20,15 @@ spec:
       healthChecks: []
       name: main-ai-qa-testing-main
       imagePullPolicy: Always
-      imageRegistry: docker.io/main-ai-qa-testing
+      imageRegistry: docker.io/amaan02/main-ai-qa-testing
       imagePullSecretName: imagepull-docker
       credentialId: credential_f9ceb9fb-c1d3-4b37-b2e1-fbc721f838f9
+      commitDetails:
+        commitHash: 8fd94ef0e5eecc59d71cc264580840c72f7551f5
+        commitAvatar: https://github.com/.png
+        commitTime: ''
+        commitMessage: ''
+        commitUser: ''
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
