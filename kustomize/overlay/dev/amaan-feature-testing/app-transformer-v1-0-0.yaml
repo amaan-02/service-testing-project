@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 20d6b77dfa8df1025543b8d1cb83891ec360bb45
+    - imageTag: 1a9d15cb611974d33759c3b8af85bf3279e51e02
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -24,10 +24,10 @@ spec:
       imagePullSecretName: imagepull-docker
       credentialId: credential_5784dbe8-0a00-4fb0-adb9-e0f0b099fa19
       commitDetails:
-        commitHash: 20d6b77dfa8df1025543b8d1cb83891ec360bb45
+        commitHash: 1a9d15cb611974d33759c3b8af85bf3279e51e02
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2025-01-03T17:42:44Z'
-        commitMessage: Deploy amaan-iwi to dev
+        commitTime: '2025-01-03T17:54:34Z'
+        commitMessage: Initiate ai-default application
         commitUser: skyu-v2-dev[bot]
   minReplicas: 1
   maxReplicas: 1
