@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: d21bed75aa154928e51a65beb10b264eac6d3c1b
+    - imageTag: f45320c40966bb928973d7220eb93ec168d4e753
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -24,10 +24,10 @@ spec:
       imagePullSecretName: imagepull-docker
       credentialId: credential_f9ceb9fb-c1d3-4b37-b2e1-fbc721f838f9
       commitDetails:
-        commitHash: d21bed75aa154928e51a65beb10b264eac6d3c1b
+        commitHash: f45320c40966bb928973d7220eb93ec168d4e753
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2025-01-03T17:12:53Z'
-        commitMessage: Initiate januda-setup-test application
+        commitTime: '2025-01-03T17:21:41Z'
+        commitMessage: Initiate januda-setup-test-2 application
         commitUser: skyu-v2-dev[bot]
   minReplicas: 1
   maxReplicas: 1
