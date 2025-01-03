@@ -3,8 +3,8 @@ kind: Namespace
 metadata:
   name: qa-amaan-dev
   labels:
-    environmentId: env_8641a4fa-b8f6-4a25-a494-eb1e0b741bf8
-    projectId: project_fc6729ac-a771-4987-8952-a3876c98dc64
+    environmentId: env_f06ad929-c820-4ac1-b36a-81ceeac0935c
+    projectId: project_92ed9ac3-1a76-4a98-b613-8fb7c60c0731
     projectName: qa-amaan-project-1
     environmentName: dev
     organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016

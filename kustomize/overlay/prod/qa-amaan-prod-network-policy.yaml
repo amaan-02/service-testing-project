@@ -5,8 +5,8 @@ metadata:
   namespace: qa-amaan-prod
   labels:
     organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
-    projectId: project_fc6729ac-a771-4987-8952-a3876c98dc64
-    environmentId: env_4818c144-f71e-4c4e-bb43-f97b152f696b
+    projectId: project_92ed9ac3-1a76-4a98-b613-8fb7c60c0731
+    environmentId: env_b6b27964-1992-4441-8fac-e9be67de8952
 spec:
   podSelector: {}
   egress:
@@ -18,7 +18,7 @@ spec:
     - from:
         - namespaceSelector:
             matchLabels:
-              environmentId: env_4818c144-f71e-4c4e-bb43-f97b152f696b
+              environmentId: env_b6b27964-1992-4441-8fac-e9be67de8952
     - from:
         - namespaceSelector:
             matchLabels:
