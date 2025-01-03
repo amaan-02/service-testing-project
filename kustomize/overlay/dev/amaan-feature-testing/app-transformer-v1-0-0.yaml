@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: f45320c40966bb928973d7220eb93ec168d4e753
+    - imageTag: 595bd9832ea38dba8bccac0f619d2569eb9c1a6e
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -24,10 +24,10 @@ spec:
       imagePullSecretName: imagepull-docker
       credentialId: credential_5784dbe8-0a00-4fb0-adb9-e0f0b099fa19
       commitDetails:
-        commitHash: f45320c40966bb928973d7220eb93ec168d4e753
+        commitHash: 595bd9832ea38dba8bccac0f619d2569eb9c1a6e
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2025-01-03T17:21:41Z'
-        commitMessage: Initiate januda-setup-test-2 application
+        commitTime: '2025-01-03T17:38:29Z'
+        commitMessage: Initiate amaan-iwi application
         commitUser: skyu-v2-dev[bot]
   minReplicas: 1
   maxReplicas: 1
