@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: 4446d601f67ed09734fd650b0b37403b315a0a88
+    - imageTag: b79839a34bbadea48e34140c8575159625926397
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -24,10 +24,10 @@ spec:
       imagePullSecretName: imagepull-docker
       credentialId: credential_f9ceb9fb-c1d3-4b37-b2e1-fbc721f838f9
       commitDetails:
-        commitHash: 4446d601f67ed09734fd650b0b37403b315a0a88
+        commitHash: b79839a34bbadea48e34140c8575159625926397
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2025-01-03T17:57:19Z'
-        commitMessage: Deploy ai-default to dev
+        commitTime: '2025-01-04T07:08:57Z'
+        commitMessage: Initiate SKYU UI AUTOMATION project
         commitUser: skyu-v2-dev[bot]
   minReplicas: 1
   maxReplicas: 1
