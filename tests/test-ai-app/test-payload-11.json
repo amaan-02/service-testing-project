@@ -1,0 +1,1 @@
+[{"method":"post","url":"//cluster","json":{"name":"Test Cluster","isGlobal":true,"isOrganizationGlobal":false,"aws":{"region":"us-west-2","credentialId":"1234567890"},"agent":{"cpu":"2","memory":"4GB","replicas":3},"type":"development","description":"This is a test cluster"}}]
