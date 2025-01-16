@@ -8,7 +8,7 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: f2d2f04dfddbb912dd0b9e0ee959e9ce1abb2cf0
+    - imageTag: a0fef594bc03bb9516f3031b227e65ad8e9032e7
       cpuRequestMili: 100
       cpuLimitMili: 150
       memoryRequestMb: 350
@@ -24,10 +24,10 @@ spec:
       imagePullSecretName: imagepull-docker
       credentialId: credential_5784dbe8-0a00-4fb0-adb9-e0f0b099fa19
       commitDetails:
-        commitHash: f2d2f04dfddbb912dd0b9e0ee959e9ce1abb2cf0
+        commitHash: a0fef594bc03bb9516f3031b227e65ad8e9032e7
         commitAvatar: https://github.com/skyu-v2-dev[bot].png
-        commitTime: '2025-01-14T15:08:47Z'
-        commitMessage: Deploy pipeline-run to dev
+        commitTime: '2025-01-16T08:22:40Z'
+        commitMessage: Creating test secret map in test
         commitUser: skyu-v2-dev[bot]
   minReplicas: 1
   maxReplicas: 1
