@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: service-project-test-ingress-1737687627697
+  namespace: common-project-testing-dev
+  labels:
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    applicationId: app_92182505-6244-437e-add7-406253b4ad23
+    environmentId: env_d3c9b73e-8f9c-46aa-a8ef-fd6addc71a6b
+spec:
+  tls:
+    - secretName: Secret-Auth
+      hosts:
+        - '8080'
+  rules:
+    - host: '8080'
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: test-2-v1-0-0
+                port:
+                  number: 80
