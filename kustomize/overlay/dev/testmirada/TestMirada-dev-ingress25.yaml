@@ -1,0 +1,39 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: TestMirada-dev-ingress25
+  namespace: common-project-testing-dev
+  annotations:
+    skyu.io/ingress.cert: private
+    skyu.io/ingress.provider: nginx
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/affinity: cookie
+    nginx.ingress.kubernetes.io/affinity-mode: balanced
+    nginx.ingress.kubernetes.io/backend-protocol: http
+    nginx.ingress.kubernetes.io/permanent-redirect-code: '301'
+    nginx.ingress.kubernetes.io/proxy-body-size: 500m
+    nginx.ingress.kubernetes.io/session-cookie-hash: sha1
+    nginx.ingress.kubernetes.io/session-cookie-name: route
+    nginx.ingress.kubernetes.io/ssl-redirect: 'false'
+    nginx.ingress.kubernetes.io/whitelist-source-range: 0.0.0.0/0
+  labels:
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    applicationId: app_73aafd22-ee4d-4954-b14b-7b94021cbb13
+    environmentId: env_d3c9b73e-8f9c-46aa-a8ef-fd6addc71a6b
+spec:
+  tls:
+    - secretName: test1
+      hosts:
+        - test
+  rules:
+    - host: test
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: testmirada-v1-0-0
+                port:
+                  number: 80
