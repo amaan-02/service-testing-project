@@ -1,0 +1,20 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: testrule-1740386927246
+  labels:
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    environmentId: env_fd76a64c-3758-4ccc-bd5c-2fb67cc234d0
+    testkey: '123'
+spec:
+  groups:
+    - name: ''
+      rules:
+        - alert: ''
+          expr: ''
+          annotations:
+            summary: ''
+            description: ''
+          labels:
+            '': ''
