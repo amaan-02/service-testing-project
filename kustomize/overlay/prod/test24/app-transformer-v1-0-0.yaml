@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: test24-main
+      imagePullPolicy: Always
+      imagePullSecretName: imagepull-docker
+      credentialId: credential_d11244aa-f90e-4f22-bd61-f37f7a01d471
+      imageRegistry: test-docker
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: test24
+    version: v1.0.0
+    applicationId: app_dd12c52c-5c0d-4432-894f-2cab2f3febb9
+    projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
+    organizationId: org_6de1b366-9da6-4d55-b363-f5a2c4382016
+    environmentId: env_73c32f56-d735-4561-a850-7e39497abbe9
+    environmentName: prod
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: test24
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: common-project-testing-prod
