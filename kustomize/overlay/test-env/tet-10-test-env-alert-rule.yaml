@@ -11,12 +11,12 @@ metadata:
     test-key1: '123'
 spec:
   groups:
-    - name: ''
+    - name: CPU Alert Rule
       rules:
-        - alert: ''
-          expr: ''
+        - alert: HighCPUUsage
+          expr: cpu_usage > 80
           annotations:
-            summary: ''
-            description: ''
+            summary: CPU Usage Alert
+            description: CPU usage exceeded 80%
           labels:
-            '': ''
+            severity: critical
