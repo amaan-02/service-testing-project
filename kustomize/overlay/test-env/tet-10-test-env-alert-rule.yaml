@@ -8,6 +8,7 @@ metadata:
     environmentId: env_fd76a64c-3758-4ccc-bd5c-2fb67cc234d0
     test-key: '128'
     testkey2: '256'
+    test-key1: '123'
 spec:
   groups:
     - name: ''
