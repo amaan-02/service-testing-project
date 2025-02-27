@@ -7,6 +7,7 @@ metadata:
     projectId: project_f9d8de1f-1e49-4d0a-8e49-657f15fd532b
     environmentId: env_fd76a64c-3758-4ccc-bd5c-2fb67cc234d0
     testkey: '123'
+    gfyuio: '47'
 spec:
   groups:
     - name: ''
